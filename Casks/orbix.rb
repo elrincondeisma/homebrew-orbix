@@ -12,6 +12,12 @@ cask "orbix" do
 
   app "Orbix.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", "com.apple.quarantine", "#{appdir}/Orbix.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/Orbix",
     "~/.claude/orbix",
