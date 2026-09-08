@@ -1,6 +1,6 @@
 cask "orbix" do
-  version "0.1.2"
-  sha256 "fb632392be497b66bb2810aee5fc20f1df7516d07b5ae583440385a636c5aa60"
+  version "0.1.3"
+  sha256 "c2b5e14e99ed01577ecb5cf320174f9a0e2faa005345152cfe8810548d477bf9"
 
   url "https://github.com/elrincondeisma/orbix/releases/download/v#{version}/Orbix-#{version}-arm64.dmg"
   name "Orbix"
